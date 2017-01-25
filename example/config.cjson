@@ -1,0 +1,28 @@
+{
+	"LogDir": "log", # this is comment
+	"Streams": 74582, # count of streams
+	"Description": "sharp is ##", 
+	"Servers": [
+		{
+			"Id": 1, # number of server
+			"Address": "192.168.0.1", # server #1
+			"Password": "1234567890"
+		},
+		{
+			"Id": 2,
+			"Address": "192.168.0.2", # server #2
+			"Password": "321-qwe"
+		} #, comma is commented
+		#{
+		#	"Id": 3,
+		#	"Address": "192.168.0.3", # server #3
+		#	"Password": "777"
+		#}
+	],
+	"Emails": [
+		"hjgddxh123@yugfh.hut", # email 1
+		# "swafa@kuyfhtd.yiu", - commented email
+		"tdrcsgtrs@u6tr.nvc",
+		"asdaokopoj@eae.trt"
+	] 
+} # end config file
