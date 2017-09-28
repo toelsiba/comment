@@ -79,5 +79,16 @@ func main() {
 	fmt.Printf("%+v\n", config)
 }
 ```
+Or more short variant:
+```go
+func main() {
+	var c Config
+	err := comment.ReadConfig("config.cjson", &c)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(c)
+}
+```
 
 If you need have symbol # in line - used doublet ##.
