@@ -13,6 +13,7 @@ func main() {
 	exampleTrimm()
 	exampleShield()
 	exampleLoadConfig()
+	exampleReadConfig()
 	exampleSaveConfig()
 }
 
@@ -86,6 +87,15 @@ func exampleLoadConfig() {
 	}
 
 	fmt.Println(config)
+}
+
+func exampleReadConfig() {
+	var c Config
+	err := comment.ReadConfig("config.cjson", &c)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(c)
 }
 
 func exampleSaveConfig() {
